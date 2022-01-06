@@ -1,0 +1,947 @@
+@font-face {
+  font-family: "SF Pro";
+  src: url(fonts/SF-Pro-Display-Regular.woff);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url(fonts/SF-Pro-Display-Medium.woff);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url(fonts/SFProDisplay-Semibold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url(fonts/SF-Pro-Display-Bold.woff);
+  font-weight: bold;
+}
+
+body {
+  background-color: #FCFCF0;
+  margin: 0;
+  color: #332E1C;
+  font-family: "SF Pro", Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #235aac;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+nav a, footer a {
+  text-decoration: none;
+  color: #332E1C;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  flex-direction: row;
+  list-style-type: none;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+.footer-p{
+  font-size: 1em;
+}
+
+.pic-source{
+  font-size: .9em;
+}
+
+.indentedBody {
+  margin: 0 125px;
+}
+
+.indentedTitle {
+  margin-left: 125px;
+  width: 65%;
+}
+
+.invisible {
+  display: none;
+}
+
+.top-photo-about {
+  display: flex;
+  height: 30em;
+  margin-top: 1.5em;
+  background: url("../images/White-lion-group-images/carosel-photos/top-picture.jpg") no-repeat center center;
+}
+
+.top-photo-resources {
+  display: flex;
+  height: 30em;
+  margin-top: 1.5em;
+  background: url("../images/White-lion-group-images/carosel-photos/resources-photo.jpg") no-repeat center center;
+}
+
+
+.page-title2 {
+  font-weight: 600;
+  font-size: 2.5em;
+  margin: 12px 0;
+  color: #FCFCF0;
+  align-self: flex-end;
+  margin-bottom: 64px;
+  margin-left: 64px;
+  text-shadow: -2px 2px #3D3828;
+}
+
+
+.indentedTitle h1 {
+  font-size: 1.2em;
+}
+
+.navbar {
+  /* Source: (original work) Alexander Lawless */
+  background: url("../images/BannerImage.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  align-items: center;
+}
+
+.page-title {
+  font-weight: 600;
+  font-size: 2.2em;
+  margin: 12px 0;
+  margin-left: 112px;
+}
+
+.page-title-home {
+  font-weight: 600;
+  font-size: 2.2em;
+  margin: 12px 0;
+  margin-left: 112px;
+}
+
+.navbar-items {
+  width: 90%;
+  margin: 64px 80px 39px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 0px;
+  padding-left: 32px;
+  text-align: center;
+}
+
+.nav ul li {
+  width: 60px;
+}
+
+.join-button {
+  background-color: #6792AC;
+  color: #FCFCF0;
+  border-radius: 8px;
+  height: 36px;
+  width: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.contact-info-email {
+  color: #c8daf7;
+}
+
+.contact-info-email-faq {
+  color: #0645AD;
+}
+
+.section-header {
+  font-weight: 600;
+  font-size: 2.2em;
+  margin: 12px 0;
+}
+
+.section-header-about {
+  font-weight: 600;
+  font-size: 2.2em;
+  margin: 12px 0;
+  padding-top: .5em;
+}
+
+
+/* photo gallery */
+.gallery {
+  display: flex;
+  gap: 32px;
+  width: calc(100vw - 2 * 112px);
+}
+
+.gallery>div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+}
+
+.gallery-col-1 {
+  flex: 1 1 0;
+}
+
+.gallery-col-2 {
+  flex: calc(388 / 280) calc(280 / 388) 0;
+}
+
+.gallery-col-3 {
+  flex: calc(484 / 280) calc(280 / 484) 0;
+}
+
+.gallery-col-3>* {
+  flex: 1 1 0;
+  min-height: 0;
+  min-width: 0;
+}
+
+.gallery-col-3-subsection {
+  display: flex;
+  gap: 32px;
+}
+
+.gallery img {
+  border-radius: 15px;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* hidden photo gallery */
+
+.smaller-gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.rows {
+  flex-direction: row;
+}
+
+.hide {
+  display: none;
+}
+
+.rows img {
+  width: 40%;
+}
+
+
+
+/* featured event section */
+
+.featured-event-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  width: 100%;
+}
+
+.featured-event-description {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0em;
+  padding-right: 2em;
+}
+
+.featured-event-photo {
+  width: 60%;
+}
+
+.featured-event-photo img {
+  width: 100%;
+  max-height: 400px;
+}
+
+.featured-event-description h3 {
+  color: #6792AC;
+  font-style: italic;
+  font-size: 1.3em;
+  margin: 0em;
+}
+
+
+/* faq section */
+.faq-section {
+  width: 100%;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+
+.container:hover {
+  background-color: #b9c6c2;
+}
+
+
+p.accordion {
+  width: 80%;
+  text-align: left;
+  padding: 10px 0px;
+  margin-top: 5px;
+  font-size: 1.3em;
+  color: #201f1e;
+  border: none;
+}
+
+button.dropdown {
+  width: 20%;
+  background-color: #00000000;
+  cursor: inherit;
+  color: #201f1e;
+  padding: 5px 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: none;
+}
+
+
+.answer {
+  width: 90%;
+  padding-left: 20px;
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcome-title {
+  font-weight: 600;
+  font-size: 2.7em;
+  margin: 12px 0;
+  padding-top: .5em;
+}
+
+.tagline {
+  font-size: 1.1em;
+}
+
+
+/* Slideshow style classes */
+
+.slideshow-section {
+  display: flex;
+}
+
+/* Sets the size and position of the entire slideshow */
+.slideshow {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1230px;
+  max-height: 714px;
+  position: relative;
+  margin-top: 1.5em;
+}
+
+/* Sets part of the layout of the slideshow arrow buttons */
+.slideshowSlideButtons {
+  display: flex;
+  top: 50%;
+}
+
+  /* Styles the slideshow arrow buttons */
+  .slideshowSlideButtons button {
+    cursor: pointer;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    width: 5%;
+    height: 40px;
+    border-radius: 100%;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    outline: none;
+    border: none;
+    top: 45%;
+  }
+
+/* Spacing of the slideshow arrow buttons at the sides of the slideshow*/
+#slideshow-left-button {
+  margin-left: 2%;
+}
+
+#slideshow-right-button {
+  margin-left: 93%;
+}
+
+/* Sets size and positioning of the slideshow images (slides)*/
+.slideshowSlide img {
+  width: 100%;
+  max-width: 1230px;
+  max-height: 714px;
+}
+
+/* Sets positioning of the slideshow indicator dots below the slideshow*/
+.slideshowDots {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8px;
+}
+
+/* Styles the slideshow indicator dots below the slideshow */
+.slideshowDots button {
+  cursor: pointer;
+  background-color: #989898;
+  width: 16%;
+  height: 8px;
+  border: none;
+  color: #989898;
+}
+
+/* Changes color of a slideshow indicator dot when it is hovered over by the cursor*/
+.slideshowDots button:hover {
+  background-color: #85b1cc;
+  color: #85b1cc;
+}
+
+/* Changes color of a slideshow arrow button when it is hovered over by the cursor*/
+.slideshow button:hover {
+  color: #85b1cc;
+}
+
+/* Changes color of a slideshow indicator dot when its slide is currently selected*/
+.slideshowDots .selectedDot {
+  background-color: #235aac;
+  color: #235aac;
+}
+
+/* Lightboxes style classes (featured members)*/
+.lightboxes {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* The sizing and spacing for each lightbox thumbnail */
+.lightbox-thumbnail {
+  cursor: pointer;
+  border-radius: 50px;
+  width: 100%;
+  margin: 16px;
+  max-width: 384px;
+  min-width: 13.75em;
+  height: 30em;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+/* The styling for each lightbox thumbnail's background image */
+#lightbox1-thumbnail {
+  background-image: url("../images/White-lion-group-images/event-images/Thumbnail1.jpg");
+  background-size: cover;
+}
+
+#lightbox2-thumbnail {
+  background-image: url("../images/White-lion-group-images/event-images/Thumbnail2.jpg");
+  background-size: cover;
+}
+
+#lightbox3-thumbnail {
+  background-image: url("../images/White-lion-group-images/event-images/Thumbnail3.jpg");
+  background-size: cover;
+}
+
+/* The styling for each lightbox thumbnail's text */
+.lightbox-thumbnail h1 {
+  z-index: 10000;
+  margin-top: 1em;
+  margin-left: 1.25em;
+  margin-right: 2em;
+  color: #FCFCF0;
+}
+
+/* The styling for the translucent background behind the full lightbox */
+.lightbox-background {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  z-index: 999999;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The styling for the lightbox that appears after each thumbnail is clicked */
+.lightbox-fullsize {
+  left: 0em;
+  top: 0em;
+  bottom: 0em;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  z-index: 1000000;
+  position: fixed;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  background-color: #FCFCF0;
+  font-family: "SF Pro", Arial, Helvetica, sans-serif;
+  border-color: white;
+  border-radius: 30px;
+  overflow: scroll;
+}
+
+/* The styling for the title on the fullscreen lightbox */
+.lightbox-fullsize h2 {
+  font-size: 2em;
+  margin-left: 3.5em;
+  margin-right: 3.5em;
+  margin-top: 46px;
+}
+
+/* The styling for the contents of the fullscreen lightbox */
+.lightbox-image-caption {
+  display: flex;
+}
+
+/* The styling for the picture of the fullscreen lightbox */
+.lightbox-image-caption img {
+  width: 40%;
+  max-width: 400px;
+  margin-left: 104px;
+  overflow: hidden;
+}
+
+/* The styling for the text in the caption of the fullscreen lightbox*/
+.lightbox-image-caption p {
+  width: 60%;
+  min-height: 100%;
+  margin-left: 2em;
+  margin-right: 6.5em;
+  overflow: hidden;
+}
+
+/*Footer */
+/* The size and shape of the footer's container */
+.footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  background-color: #3D3828;
+  color: #FCFCF0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* The styling of the footer's text contents */
+.footer p, h4 {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+/* The spacing of the right half of the footer */
+.footer-right {
+  margin-left: 8%;
+  margin-right: 16%;
+}
+
+
+/* Tabs on Resources page */
+/* spacing for buttons */
+.library-buttons {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.tab-button {
+  cursor: pointer;
+  color: #FCFCF0;
+  font-weight: bold;
+}
+
+/* The structure of each book/video entry */
+.book, .video {
+  display: flex;
+  flex-direction: row;
+}
+
+/* The spacing for the caption of each book/video entry */
+.book-text, .video-text {
+  margin-top: 24px;
+}
+
+/* The spacing for the title of each book/video entry */
+.module-tabs .book-title, .module-tabs .video-title {
+  font-size: 1.7em;
+  margin: 0em;
+}
+
+/* The spacing for the author of each book/video entry */
+.module-tabs .book-author, .module-tabs .video-author {
+  color: #6792AC;
+  font-style: italic;
+  font-size: 1.3em;
+  margin-top: 0.3em;
+  margin-bottom: 0em;
+}
+
+/* The spacing for the description of each book/video entry */
+.module-tabs .book-description, .module-tabs .video-author {
+  margin-top: 0.8em;
+}
+
+/* Styling for Books and Videos buttons */
+.tab-button {
+  background-color: #989898;
+  color: #FCFCF0;
+  height: 50px;
+  width: 250px;
+  font-size: 22px;
+  border: none;
+}
+
+/* Darken button color to indicate which tab is currently being viewed */
+.darken-button {
+  background-color: #235aac;
+}
+
+/* Darken the background of the button when the user hovers over it */
+.tab-button:hover {
+  background-color: #84b6d4;
+}
+
+/* Borders for panes in the module tabs */
+.pane {
+  border-style: solid;
+  border-radius: 25px;
+  border-color: #6792AC;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+/* book and video page styling */
+.book, .video {
+  display: flex;
+  flex-direction: row;
+}
+
+.bookcover, .videocover {
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookcover img, .videocover img {
+  align-self: center;
+}
+
+.bookcover figcaption, .videocover figcaption {
+  font-size: .8em;
+}
+
+.book-text, .video-text {
+  width: 80%;
+}
+
+/* Make the size of the book and video covers uniform */
+.cover-size, .video-img {
+  max-width: 60%;
+}
+
+/* Resource links re-coloring/styling */
+.resource-link {
+  color: #6792AC;
+  text-decoration: underline;
+}
+
+/* Bottom margin for "Useful Links" section */
+.links-section {
+  margin-bottom: 20px;
+}
+
+
+
+/* Media Query */
+
+@media (max-width:1040px) {
+  .section-header {
+    font-size: 1.9em;
+  }
+
+  .section-header-about {
+    font-size: 1.9em;
+    padding-top: .4em;
+  }
+
+  .top-photo-about {
+    height: 25em;
+  }
+
+  .top-photo-resources {
+    height: 25em;
+  }
+
+  .page-title {
+    display: none;
+  }
+
+  .indentedTitle {
+    display: flex;
+    font-size: 2em;
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+  }
+
+  .page-title {
+    font-size: 2em;
+  }
+
+  .page-title-home {
+    font-size: 2em;
+    display: none;
+  }
+
+  .invisible {
+    display: flex;
+  }
+
+  .lightbox-image-caption {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lightboxes {
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .lightboxes>* {
+    max-width: 100%;
+  }
+}
+
+@media (max-width:850px) {
+  .indentedBody {
+    margin: 0 30px;
+  }
+
+  .top-photo-about {
+    height: 20em;
+  }
+
+  .top-photo-resources {
+    height: 20em;
+  }
+
+  .module-tabs .book-title, .module-tabs .video-title {
+    font-size: 1.4em;
+    margin: 0em;
+  }
+
+  /* The spacing for the author of each book/video entry */
+  .module-tabs .book-author, .module-tabs .video-author {
+    font-size: 1.1em;
+  }
+
+  /* The spacing for the description of each book/video entry */
+  .module-tabs .book-description, .module-tabs .video-author {
+    margin-top: 0.8em;
+  }
+
+  .gallery {
+    display: none;
+  }
+
+  .hide {
+    display: flex;
+  }
+}
+
+@media (max-width:700px) {
+  .featured-event-section {
+    flex-direction: column;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 100%;
+  }
+
+  .featured-event-description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 2em;
+  }
+
+  .featured-event-photo {
+    width: 70%;
+  }
+
+  .featured-event-photo img {
+    width: 100%;
+    max-height: 300px;
+  }
+
+  .welcome-title {
+    font-weight: 600;
+    font-size: 2.2em;
+    margin: 12px 0;
+    padding-top: .3em;
+  }
+
+  .tagline {
+    font-size: .9em;
+  }
+
+  .bookcover, .videocover {
+    width: 30%;
+  }
+
+  .book-text, .video-text {
+    width: 70%;
+  }
+
+  .module-tabs .book-title, .module-tabs .video-title {
+    font-size: 1.2em;
+    margin: 0em;
+  }
+
+  /* The spacing for the author of each book/video entry */
+  .module-tabs .book-author, .module-tabs .video-author {
+    font-size: 1.0em;
+  }
+
+  /* The spacing for the description of each book/video entry */
+  .module-tabs .book-description, .module-tabs .video-author {
+    margin-top: 0.8em;
+  }
+
+  .page-title {
+    font-size: 1.6em;
+  }
+
+  .indentedTitle {
+    font-size: 1.6em;
+  }
+
+  .lightbox-image-caption {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:550px) {
+  p{
+    font-size: 1em;
+  }
+
+  .section-header {
+    font-size: 1.5em;
+  }
+
+  .section-header-about {
+    font-size: 1.5em;
+    padding-top: .4em;
+  }
+
+  .top-photo-about {
+    height: 15em;
+  }
+
+  .top-photo-resources {
+    height: 15em;
+  }
+
+  .book, .video {
+    flex-direction: column;
+  }
+
+  .bookcover, .videocover {
+    width: 50%;
+  }
+
+  .book-text, .video-text {
+    width: 100%;
+  }
+
+  .module-tabs .book-title, .module-tabs .video-title {
+    font-size: 1em;
+    margin: 0em;
+  }
+
+  /* The spacing for the author of each book/video entry */
+  .module-tabs .book-author, .module-tabs .video-author {
+    font-size: 1em;
+  }
+
+  /* The spacing for the description of each book/video entry */
+  .module-tabs .book-description, .module-tabs .video-author {
+    margin-top: 0.8em;
+  }
+
+  .pane {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width:405px) {
+  .module-tabs .book-title, .module-tabs .video-title {
+    font-size: 1em;
+    margin: 0em;
+  }
+
+  /* The spacing for the author of each book/video entry */
+  .module-tabs .book-author, .module-tabs .video-author {
+    font-size: 1em;
+  }
+
+  /* The spacing for the description of each book/video entry */
+  .module-tabs .book-description, .module-tabs .video-author {
+    margin-top: 0.8em;
+  }
+}
+
+/* Allows certain interactive elements to be hidden from the display */
+.hidden {
+  display: none;
+}
